@@ -1,16 +1,18 @@
 #!/bin/bash
 # Secure OpenConnect server installer for Ubuntu 18.04 or higher.
 # https://github.com/MahanPR
+WHITE='\e[0;37m'
 RED='\e[0;31m'
 YELLOW='\e[0;33m'
 GREEN='\e[0;32m'
 BOLDGREEN="\e[1;32m"
 CYAN='\e[0;36m'
+PURPLE='\e[0;35m'
 EC='\e[0m'
 DEFUSER=user
 PORT=443
 PDNS=8.8.8.8
-SDNS=4.2.2.4
+SDNS=8.8.4.4
 ocservConfig=/etc/ocserv/ocserv.conf
 NET_INTER=$(ip r | head -1 | cut -d" " -f5)
 serverlist=$(stat -c %n /lib/systemd/system/ocserv*.service | wc -l)
@@ -92,19 +94,19 @@ testvercomp() {
 
 # OCServ Questions before install
 function Questions() {
-  echo -e "\n                OOOOO   CCCCC   SSSSS  EEEEEEE RRRRRR  VV     VV\n               OO   OO CC      SS      EE      RR   RR VV     VV\n               OO   OO CC       SSSSS  EEEEE   RRRRRR   VV   VV \n               OO   OO CC           SS EE      RR  RR    VV VV  \n                OOOO0   CCCCC   SSSSS  EEEEEEE RR   RR    VVV   "
-  echo -e "\n${WHITE}############################################# MAHAN #################################################${EC}\n"
+  echo -e "\n${WHITE}                OOOOO   CCCCC   SSSSS  EEEEEEE RRRRRR  VV     VV\n               OO   OO CC      SS      EE      RR   RR VV     VV\n               OO   OO CC       SSSSS  EEEEE   RRRRRR   VV   VV \n               OO   OO CC           SS EE      RR  RR    VV VV  \n                OOOO0   CCCCC   SSSSS  EEEEEEE RR   RR    VVV   ${EC}"
+  echo -e "\n${PURPLE}############################################# MAHAN #################################################${EC}\n"
   echo "Script Name: Secure OpenConnect+LetsEncrypt server installer for Ubuntu 18.04 and later."
   echo "Description: With this script you can start your Openconnect+LetsEncrypt server in less than a minute"
-  echo "Author: MPR - Persian Guys"
-  echo "Github: https://github.com/MahanPR"
-  echo -e "\n${WHITE}############################################# MAHAN #################################################${EC}\n"
+  echo -e "\n${WHITE}Author: MPR - Persian Guys${EC}"
+  echo -e "\n${WHITE}Github: https://github.com/MahanPR${EC}"
+  echo -e "\n${PURPLE}############################################# MAHAN #################################################${EC}\n"
   echo -e "\n${CYAN}Welcome to Openconnect+LetsEncrypt Installer for ubuntu 18.04 and later${EC}\n"
-  echo -e "\n${RED}Important - NOTE${EC}"
+  echo -e "\n${YELLOW}Important - NOTE${EC}"
   echo -e "\nPlease note
-   * This script has been tested on ${YELLOW}Ubuntu 18.04, 20.04 , 22.04.${EC}"
+   * This script has been tested on ${PURPLE}Ubuntu 18.04, 20.04 , 22.04.${EC}"
   echo -e "   * you need a ${RED}domain${EC} to set up the server. If you don't have one, buy one first before using this script.\n"
-  echo -e "\n${RED}Important - NOTE${EC}"
+  echo -e "\n${YELLOW}Important - NOTE${EC}"
   echo -ne "\nNow if all the prerequisites are ready, you need to answer a few simple questions:\n"
   echo -e "${RED}**Please answer the all questions correctly**${EC}"
   # Questions
@@ -498,7 +500,7 @@ COMMIT" >>/etc/ufw/before.rules
   echo -e "${WHITE}###################################################################${EC}"
   echo -e "${RED}###################################################################${EC}"
   echo -e "If you are happy with my script, you can make me happy with a small amount of ${WHITE}donation${EC}."
-  echo -e "My ${GREEn}Tether(USDT) BEP20${EC} Wallet : ${WHITE}0xf975feDa14e0741aF220cF0E725891cf887dE83D${EC}"
+  echo -e "My ${GREEN}Tether(USDT) BEP20${EC} Wallet : ${WHITE}0xf975feDa14e0741aF220cF0E725891cf887dE83D${EC}"
   echo -e "My ${CYAN}SHIB ${EC} Wallet : ${WHITE}0xf975feDa14e0741aF220cF0E725891cf887dE83D${EC}"
   echo -e "My ${RED}Tron (TRX) TRC20${EC} Wallet : ${WHITE}TVzmTqxGNbNcHn8MVcynHCVLqWvgQELNTa${EC}"
   echo -e "My ${CYAN}LiteCoin (LTC)Wallet : ${WHITE}LZbWymBmvTEMKtGogyRfDDF2r17k1mRGAL${EC}"
