@@ -93,12 +93,12 @@ testvercomp() {
 # OCServ Questions before install
 function Questions() {
   echo -e "\n                OOOOO   CCCCC   SSSSS  EEEEEEE RRRRRR  VV     VV\n               OO   OO CC      SS      EE      RR   RR VV     VV\n               OO   OO CC       SSSSS  EEEEE   RRRRRR   VV   VV \n               OO   OO CC           SS EE      RR  RR    VV VV  \n                OOOO0   CCCCC   SSSSS  EEEEEEE RR   RR    VVV   "
-  echo "####################################### MAHAN ###########################################"
-  echo "${ٰYELLOW}Script Name: Secure OpenConnect+LetsEncrypt server installer for Ubuntu 18.04 and later.${EC}"
-  echo "${ٰPINK}Description: With this script you can start your Openconnect+LetsEncrypt server in less than a minute${EC}"
-  echo "${ٰYELLOW}Author: MPR - Persian Guys${EC}"
-  echo "${ٰYELLOW}Github: https://github.com/MahanPR${EC}"
-  echo "####################################### MAHAN ###########################################"
+  echo "############################################# MAHAN #################################################"
+  echo "Script Name: Secure OpenConnect+LetsEncrypt server installer for Ubuntu 18.04 and later."
+  echo "Description: With this script you can start your Openconnect+LetsEncrypt server in less than a minute"
+  echo "Author: MPR - Persian Guys"
+  echo "Github: https://github.com/MahanPR"
+  echo "############################################# MAHAN #################################################"
   echo -e "\n${CYAN}Welcome to Openconnect+LetsEncrypt Installer for ubuntu 18.04 and later${EC}\n"
   echo "${ٰRED}Important - NOTE${EC}"
   echo -e "\nPlease note
