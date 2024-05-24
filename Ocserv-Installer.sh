@@ -92,19 +92,19 @@ testvercomp() {
 
 # OCServ Questions before install
 function Questions() {
-  echo -e "${WHITE}\n                OOOOO   CCCCC   SSSSS  EEEEEEE RRRRRR  VV     VV\n               OO   OO CC      SS      EE      RR   RR VV     VV\n               OO   OO CC       SSSSS  EEEEE   RRRRRR   VV   VV \n               OO   OO CC           SS EE      RR  RR    VV VV  \n                OOOO0   CCCCC   SSSSS  EEEEEEE RR   RR    VVV   ${EC}"
-  echo "${YELLOW}######################################################################################${EC}"
-  echo "${WHITE}#Script Name	:  Secure OpenConnect+LetsEncrypt server installer for Ubuntu 18.04 and later.${EC}"
-  echo "${WHITE}#Description	:  With this script you can start your Openconnect+LetsEncrypt server in less than a minute${EC}"
-  echo "${WHITE}#Author         :  MPR - Persian Guys${EC}"
-  echo "${WHITE}#Github         :  https://github.com/MahanPR${EC}"
-  echo "${YELLOW}######################################################################################${EC}"
+  echo -e "\n                OOOOO   CCCCC   SSSSS  EEEEEEE RRRRRR  VV     VV\n               OO   OO CC      SS      EE      RR   RR VV     VV\n               OO   OO CC       SSSSS  EEEEE   RRRRRR   VV   VV \n               OO   OO CC           SS EE      RR  RR    VV VV  \n                OOOO0   CCCCC   SSSSS  EEEEEEE RR   RR    VVV   "
+  echo "####################################### MAHAN ###########################################"
+  echo "${ٰYELLOW}Script Name: Secure OpenConnect+LetsEncrypt server installer for Ubuntu 18.04 and later.${EC}"
+  echo "${ٰPINK}Description: With this script you can start your Openconnect+LetsEncrypt server in less than a minute${EC}"
+  echo "${ٰYELLOW}Author: MPR - Persian Guys${EC}"
+  echo "${ٰYELLOW}Github: https://github.com/MahanPR${EC}"
+  echo "####################################### MAHAN ###########################################"
   echo -e "\n${CYAN}Welcome to Openconnect+LetsEncrypt Installer for ubuntu 18.04 and later${EC}\n"
-  echo "${WHITE}###\N\###\O\###\T\###\E\###${EC}"
+  echo "${ٰRED}Important - NOTE${EC}"
   echo -e "\nPlease note
    * This script has been tested on ${YELLOW}Ubuntu 18.04, 20.04 , 22.04.${EC}"
   echo -e "   * you need a ${RED}domain${EC} to set up the server. If you don't have one, buy one first before using this script.\n"
-  echo "${WHITE}###\N\###\O\###\T\###\E\###${EC}"
+  echo "${ٰRED}Important - NOTE${EC}"
   echo -ne "\nNow if all the prerequisites are ready, you need to answer a few simple questions:\n"
   echo -e "${RED}**Please answer the all questions correctly**${EC}"
   # Questions
